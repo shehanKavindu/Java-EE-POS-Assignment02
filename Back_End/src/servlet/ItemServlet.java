@@ -161,7 +161,7 @@ public class ItemServlet extends HttpServlet {
         String code = req.getParameter("code");
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/shop","root","admin@123");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/shop","root","admin@1234");
             PreparedStatement pstm = connection.prepareStatement("DELETE FROM item WHERE code = ?");
             pstm.setObject(1, code);
             boolean b = pstm.executeUpdate() > 0;
