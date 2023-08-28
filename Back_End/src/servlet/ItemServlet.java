@@ -135,7 +135,7 @@ public class ItemServlet extends HttpServlet {
             boolean b = pstm.executeUpdate() > 0;
 
             if(b){
-                JsonObjectBuilder addCustomer = Json.createObjectBuilder(); // customer updated message
+                JsonObjectBuilder addCustomer = Json.createObjectBuilder();
                 addCustomer.add("state","ok");
                 addCustomer.add("message","update successful");
                 addCustomer.add("data","");
