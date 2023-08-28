@@ -65,8 +65,6 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
-
-
   $("#btnSave").click(function () {
     let formData=$("#itemForm").serialize();
     $.ajax({
@@ -154,7 +152,7 @@
         alert(resp.message);
       },
       error:function (error){
-        // alert(JSON.parse(error.responseText).message);
+
       }
 
     });
